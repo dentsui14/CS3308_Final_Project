@@ -3,7 +3,7 @@
 
 title: Python For Business Professionals
 author: The Jupyter Book Community
-logo: logo.png
+logo: icon.png
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
