@@ -7,9 +7,6 @@ logo: icon.png
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
-execute:
-  exclude_patterns:
-    - 'markdown-notebooks.md'
 
 # Define the name of the latex output file for PDF builds
 latex:
