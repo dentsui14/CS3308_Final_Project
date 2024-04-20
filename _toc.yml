@@ -4,7 +4,7 @@
 format: jb-book
 root: intro
 chapters:
-- file: markdown
+- file: intro_page
 - file: quiz
 - file: notebooks
   sections:
