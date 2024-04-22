@@ -2,6 +2,19 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: intro_computing
+root: welcome
+chapters:
+- file: computing
+  sections: 
+  - file: intro_computing
+  - file: variables
+  - file: conditionals
+  - file: loops
+  - file: final_computing
+- file: ai
+  sections:
+  - file: intro_ai
+  - file: prompt_engineering
+  - file: final_ai
 
 

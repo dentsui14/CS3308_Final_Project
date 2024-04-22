@@ -1,7 +1,7 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
-title: Python For Business Professionals
+title: Computing and AI For Business Professionals
 author: The Jupyter Book Community
 logo: icon.png
 
@@ -12,6 +12,9 @@ logo: icon.png
 latex:
   latex_documents:
     targetname: book.tex
+
+execute:
+  execute_notebooks: 'off'
 
 # Add a bibtex file so that we can create citations
 bibtex_bibfiles:

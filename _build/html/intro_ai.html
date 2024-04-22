@@ -1,0 +1,644 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Intro To Artificial Intelligence &#8212; Computing and AI For Business Professionals</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'intro_ai';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Prompt Engineering" href="prompt_engineering.html" />
+    <link rel="prev" title="Artificial Intelligence Module" href="ai.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="welcome.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/icon.png" class="logo__image only-light" alt="Computing and AI For Business Professionals - Home"/>
+    <script>document.write(`<img src="_static/icon.png" class="logo__image only-dark" alt="Computing and AI For Business Professionals - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="welcome.html">
+                    Welcome
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="computing.html">Computing Module</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="intro_computing.html">Introduction to Computing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="variables.html">Variables</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="conditionals.html">Conditionals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="loops.html">Loops</a></li>
+<li class="toctree-l2"><a class="reference internal" href="final_computing.html">Final Computing Project</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="ai.html">Artificial Intelligence Module</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Intro To Artificial Intelligence</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prompt_engineering.html">Prompt Engineering</a></li>
+<li class="toctree-l2"><a class="reference internal" href="final_ai.html">Final AI Project</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://mybinder.org/v2/gh/dentsui14/CS3308_Final_Project/master?urlpath=tree/intro_ai.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onBinder"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="_static/images/logo_binder.svg">
+  </span>
+<span class="btn__text-container">Binder</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="initThebeSBT()"
+  class="btn btn-sm btn-launch-thebe dropdown-item"
+  title="Launch Thebe"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-play"></i>
+  </span>
+<span class="btn__text-container">Live Code</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+<a href="https://github.com/dentsui14/CS3308_Final_Project/issues/new?title=Issue%20on%20page%20%2Fintro_ai.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button"
+   title="Open an issue"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+
+</a>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/intro_ai.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Intro To Artificial Intelligence</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-artificial-intelligence">What is Artificial Intelligence?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#artificial-intelligence-in-practice">Artificial Intelligence in Practice</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-problems-does-ai-solve">What problems does AI solve?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#multiple-choice-quiz">Multiple Choice Quiz</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#activity">Activity</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="intro-to-artificial-intelligence">
+<h1>Intro To Artificial Intelligence<a class="headerlink" href="#intro-to-artificial-intelligence" title="Link to this heading">#</a></h1>
+<section id="what-is-artificial-intelligence">
+<h2>What is Artificial Intelligence?<a class="headerlink" href="#what-is-artificial-intelligence" title="Link to this heading">#</a></h2>
+<p>Now that we have covered traditional computing, we are ready to tackle Artificial Intelligence or AI.</p>
+<p>As previously explained, humans are slow but smart, and computers are fast but dumb. Thus, programmers guide computers through tasks by designing algorithms and writing programs, leaving computers to handle all of the repetitive calculations.</p>
+<p>But what if we could bridge the gap between computers and humans? To answer this, let’s break down the term “Artificial Intelligence”. Here, “artificial” indicates that the entities involved are machines instead of humans, and intelligence refers to cognitive faculties similar to humans. Thus, the core purpose of AI is to emulate the capabilities of humans with the power of machines.</p>
+</section>
+<section id="artificial-intelligence-in-practice">
+<h2>Artificial Intelligence in Practice<a class="headerlink" href="#artificial-intelligence-in-practice" title="Link to this heading">#</a></h2>
+<p>Here are some examples of AI applications:</p>
+<ul class="simple">
+<li><p>Spotify’s song recommendations based on user listening patterns.</p></li>
+<li><p>Google Maps’ navigation, considering real-time traffic to find efficient routes.</p></li>
+<li><p>Tesla’s vehicles detecting and avoiding obstacles, such as pedestrians.</p></li>
+<li><p>Financial institutions using AI to forecast market trends by analyzing web activity.</p></li>
+</ul>
+<p>Here are some non-examples of AI applications:</p>
+<ul class="simple">
+<li><p>Binary search algorithms.</p></li>
+<li><p>The entirety of the Internet.</p></li>
+<li><p>The specific computing device you are using to complete this course.</p></li>
+</ul>
+<p>While AI is a significant advancement in technology, the entirety of the internet and computing infrastructure are equally as advanced, important, and modern. If a solution employs AI, it is not necessarily better than a solution that does not. Not every problem can and should be solved with AI; it is simply another tool in our inventory.</p>
+</section>
+<section id="what-problems-does-ai-solve">
+<h2>What problems does AI solve?<a class="headerlink" href="#what-problems-does-ai-solve" title="Link to this heading">#</a></h2>
+<p>To understand the problems AI solves, we must understand how it works. The most popular form of AI is machine learning. How do we make a machine learn? Let’s take the example of a child learning how to ride a bike. At first, they will try and likely fail. They may not have pedaled fast enough or pushed too hard on the handles. Taking this information (that they may learn from a parent or may observe themselves), they try again. Over time, as they try and improve again and again, they hopefully will keep improving until they finally are able to ride a bike.</p>
+<a class="bg-primary mb-1 reference internal image-reference" href="_images/bike.png"><img alt="Kid failing to ride a bike and then succeeding later." class="bg-primary mb-1 align-center" src="_images/bike.png" style="height: 250px;" /></a>
+<p>Machine learning operates under these exact same principles. We can think of machine learning as attempting to create a <strong>model</strong> that is trained to complete a specific task.</p>
+<ol class="arabic simple">
+<li><p>Choose an ML algorithm and initialize <strong>hyperparameters</strong></p></li>
+</ol>
+<p>This is equivalent to choosing a bike. If a bike is broken, it doesn’t matter how much the child tries: they may not be able to ride it, or they may learn incorrect behaviors that do not translate to all bikes. We can think of choosing a model and hyperparameters as giving our model its “identity”, which changes depending on the math and numbers we choose to calculate.</p>
+<ol class="arabic simple" start="2">
+<li><p>Generating an initial <strong>hypothesis</strong></p></li>
+</ol>
+<p>This is equivalent to riding the bike the first time. Like the child, our model will usually randomly generate some random guess or <strong>hypothesis</strong>. We may randomly guess a song that a user might like or a route that a car should take.</p>
+<ol class="arabic simple" start="3">
+<li><p>Evaluating the hypothesis</p></li>
+</ol>
+<p>This is equivalent to a parent telling a child what they did wrong, or a child observing it themselves. For ML algorithms, we will usually calculate some “score” or <strong>heuristic</strong> that evaluates how well it completed the task we want to train. For instance, if we are creating a GPS router, we may define a heuristic that gives low scores to long routes and high scores to short routes. When we externally supply data to inform a model, it is called <strong>supervised learning</strong>. When we let the model learn on its own, it is called <strong>unsupervised learning</strong></p>
+<ol class="arabic simple" start="4">
+<li><p>Refining the hypothesis</p></li>
+</ol>
+<p>This is equivalent to a child learning from their mistakes. Usually, when we calculate the “score” of a certain hypothesis, we also record some information that helps us improve our model. Once again, with the GPS system, we may notice that one of our right turns brought us further away from our destination, and thus will instead make a left turn.</p>
+<ol class="arabic simple" start="5">
+<li><p><strong>Convergence</strong></p></li>
+</ol>
+<p>This is equivalent to a child eventually learning how to ride a bike after many repeated attempts. We will continually repeat steps 3-4, hopefully improving our hypotheses each time. ML models are designed to <strong>converge</strong> to some hypothesis after a certain amount of time. If this value is desirable, we are done. If it is not, we may need to return to step 1.</p>
+<a class="bg-primary mb-1 reference internal image-reference" href="_images/model.png"><img alt="5 rectables showing an ML model." class="bg-primary mb-1 align-center" src="_images/model.png" style="height: 250px;" /></a>
+<p>ML models are powerful because they are able to draw conclusions from a large amount of data: much larger than any human. Furthermore, because their logic is purely driven by math, they can often come to unique conclusions compared to humans. Thus, these are the problems that are best suited for ML.</p>
+<p><strong>Prediction</strong>: Anticipating future events based on prevailing conditions.</p>
+<p><strong>Decision-making</strong>: Identifying optimal actions from given circumstances. This is closely related to prediction as if we can accurately predict the result of any decision we can determine the correct one.</p>
+<p><strong>Classification</strong>: Categorizing data given that each point has a set of characteristics.</p>
+<p>These are all suitable tasks because they rely on making conclusions based on data.</p>
+</section>
+<section id="multiple-choice-quiz">
+<h2>Multiple Choice Quiz<a class="headerlink" href="#multiple-choice-quiz" title="Link to this heading">#</a></h2>
+<ol class="arabic">
+<li><p>Which of the following problems would best be solved with AI?</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span> A. Defending an enterprise network from malicious web attacks
+
+ B. Keeping track of billions of database entries while ensuring easy access
+
+ C. Determing whether a user is a human instead of a machine using Captcha
+
+ D. Determining which restuarant a person would want to go to based on their personal information
+</pre></div>
+</div>
+</li>
+</ol>
+<div class="toggle docutils container">
+<p>The answer is D as it is the only problem that involves computing a large amount of data (personal information) to come to a conclusion (restaurant). A is largely an Internet problem which is not AI. While B involves data it is more concerned with storing, not making conclusions from it. While C makes a conclusion, and it is used to defend against AI, it does not use data to come to this conclusion.</p>
+</div>
+<ol class="arabic" start="2">
+<li><p>For each of the following examples determine whether the problem is prediction, decision-making, or classification.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span> A. Spotify&#39;s song recommendations based on user listening patterns.
+
+ B. Google Maps&#39; navigation, considering real-time traffic to find efficient routes.
+
+ C. Tesla&#39;s vehicles detecting and avoiding obstacles, such as pedestrians.
+
+ D. Financial institutions using AI to forecast market trends by analyzing web activity.
+</pre></div>
+</div>
+</li>
+</ol>
+<div class="toggle docutils container">
+<p>D is prediction as we are guessing what a future event is. A and B are decisionmaking as we are deciding the song to listen to or the route to take. C is classification because we need to be able to distinguish between pedestrians from the background. For example, we should yield to pedestrians but not necessarily to other track.</p>
+</div>
+</section>
+<section id="activity">
+<h2>Activity<a class="headerlink" href="#activity" title="Link to this heading">#</a></h2>
+<p>Create a list of 5 problems you encounter in your work life. For each, classify whether they would be better solved with or without AI. If with AI, classify whether the problem is prediction, decision-making, or classfication. If without AI, explain why.</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "dentsui14/CS3308_Final_Project",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="ai.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Artificial Intelligence Module</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="prompt_engineering.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Prompt Engineering</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-artificial-intelligence">What is Artificial Intelligence?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#artificial-intelligence-in-practice">Artificial Intelligence in Practice</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-problems-does-ai-solve">What problems does AI solve?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#multiple-choice-quiz">Multiple Choice Quiz</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#activity">Activity</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Jupyter Book Community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Introduction to Computing &#8212; Python For Business Professionals</title>
+    <title>Introduction to Computing &#8212; Computing and AI For Business Professionals</title>
   
   
   
@@ -62,6 +62,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'intro_computing';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Variables" href="variables.html" />
+    <link rel="prev" title="Computing Module" href="computing.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -123,8 +125,6 @@
       
       
       
-        
-      
       <div class="bd-sidebar-primary bd-sidebar">
         
 
@@ -141,7 +141,7 @@
 
   
 
-<a class="navbar-brand logo" href="#">
+<a class="navbar-brand logo" href="welcome.html">
   
   
   
@@ -152,8 +152,8 @@
       
     
     
-    <img src="_static/icon.png" class="logo__image only-light" alt="Python For Business Professionals - Home"/>
-    <script>document.write(`<img src="_static/icon.png" class="logo__image only-dark" alt="Python For Business Professionals - Home"/>`);</script>
+    <img src="_static/icon.png" class="logo__image only-light" alt="Computing and AI For Business Professionals - Home"/>
+    <script>document.write(`<img src="_static/icon.png" class="logo__image only-dark" alt="Computing and AI For Business Professionals - Home"/>`);</script>
   
   
 </a></div>
@@ -172,13 +172,30 @@
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1 current active">
-                <a class="reference internal" href="#">
-                    Introduction to Computing
+            <li class="toctree-l1">
+                <a class="reference internal" href="welcome.html">
+                    Welcome
                 </a>
             </li>
         </ul>
-        
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="computing.html">Computing Module</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Introduction to Computing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="variables.html">Variables</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="conditionals.html">Conditionals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="loops.html">Loops</a></li>
+<li class="toctree-l2"><a class="reference internal" href="final_computing.html">Final Computing Project</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="ai.html">Artificial Intelligence Module</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="intro_ai.html">Intro To Artificial Intelligence</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prompt_engineering.html">Prompt Engineering</a></li>
+<li class="toctree-l2"><a class="reference internal" href="final_ai.html">Final AI Project</a></li>
+</ul>
+</li>
+</ul>
+
     </div>
 </nav></div>
     </div>
@@ -406,6 +423,7 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="introduction-to-computing">
 <h1>Introduction to Computing<a class="headerlink" href="#introduction-to-computing" title="Link to this heading">#</a></h1>
+<p><strong>REMINDER</strong> Click on the rocket symbol in the top right and press live code. Go to <a class="reference internal" href="welcome.html"><span class="doc">Welcome</span></a> for more information!</p>
 <p>You probably use computers every day to send emails, write reports, create presentations, or watch entertainment. However, that is only a very small subset of the full capabilities of computers. Currently, almost everything in the business world is supported by computers. Google’s internet servers have allowed the entire world to have access to its services at an extremely high speed. Amazon may collect billions of customer interactions to provide product recommendations using artificial intelligence. By better understanding the fundamentals of computing and artificial intelligence, you will be able to leverage this knowledge to empower your business solutions and daily operations, even if you aren’t a full-blown programmer.</p>
 <p>Computers are powerful because they can complete calculations at a level of speed and accuracy that is impossible for humans. Think about how long it would take for you to calculate 7823 x 9201, versus a computer which can solve it instantaneously. However, computers are also extremely dumb. Without any human intervention, it cannot do anything beyond storing information and performing arithmetic. Thus, in solving any problem, the computer’s only role is to carry out rote calculations. It is the human’s role to tell it what to do.</p>
 <a class="bg-primary mb-1 reference internal image-reference" href="_images/fast_dumb.png"><img alt="Open book with X covering the left half." class="bg-primary mb-1 align-center" src="_images/fast_dumb.png" style="height: 250px;" /></a>
@@ -413,7 +431,7 @@ document.write(`
 <p>Let’s see a detailed example of how one might design and implement an algorithm and program.</p>
 <section id="linear-vs-binary-search-algorithm">
 <h2>Linear vs Binary Search Algorithm<a class="headerlink" href="#linear-vs-binary-search-algorithm" title="Link to this heading">#</a></h2>
-<p>Suppose we are looking for the word “professional” in the English Dictionary. One algorithm that we can use to solve this is to flip one by one through each page of the dictionary. For each page check to see if that word is contained in the dictionary. If it is then we choose that word. Otherwise we flip the page and check the next word. This is guaranteed to work but obviously very slow. This is known as a <strong>linear search</strong></p>
+<p>Suppose we are looking for the word “professional” in the English Dictionary. One algorithm that we can use to solve this is to flip one by one through each page of the dictionary. For each page check to see if that word is contained in the dictionary. If it is then we choose that word. Otherwise we flip the page and check the next word. This is guaranteed to work but obviously very slow. This is known as a <strong>linear search</strong>.</p>
 <p>Is this how a human would normally search for a word in a dictionary? Of course not! What would you do? Open to the middle of the book. Let’s say that the middle of the book contains words of the letter “M”. Because P is after “M” we know that the word “professional” is in the second half of the book! Thus, we can completely eliminate checking the first half of the book and only worry about the second half of the book. We can repeat this process again and again, halving the book each time until we find our word. This is known as a <strong>binary search</strong>.</p>
 <a class="bg-primary mb-1 reference internal image-reference" href="_images/book.png"><img alt="Computer with caption fast but dumb. Human with caption slow but smart." class="bg-primary mb-1 align-center" src="_images/book.png" style="height: 200px;" /></a>
 <p>How much more efficient is the binary search compared the linear search? There are around 1,000,000 words in the English language. For our linear search, this would require us to read the majority of the book, somewhere between <strong>500,000</strong> to <strong>1,000,000</strong> words! On the other hand, in the second algorithm, we half our search space for every word. 1,000,000 becomes 500,000,000 becomes 250,000,000 and so on. After halving only <span class="math notranslate nohighlight">\(log_2(1,000,000) = \)</span><strong>20</strong> times we are guaranteed to find any word!</p>
@@ -434,13 +452,38 @@ document.write(`
 </section>
 <section id="mutliple-choice-quiz">
 <h2>Mutliple-Choice Quiz<a class="headerlink" href="#mutliple-choice-quiz" title="Link to this heading">#</a></h2>
-<p>Answer the following questions in the code box below.</p>
-<ol class="arabic simple">
-<li><p>Which of the following is the LEAST similar to an algorithm?</p></li>
+<p>Answer the following multiple choice questions.</p>
+<ol class="arabic">
+<li><p>Which of the following are characteristics of a computer? Which of the following are characteristics of a human?</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span> A. Able to perform a large number of operations efficiently.
+
+ B. &quot;Thinks&quot; in code
+
+ C. &quot;Thinks&quot; in pseudocode
+
+ D. Able to plan the solution of a problem
+</pre></div>
+</div>
+</li>
 </ol>
 <div class="toggle docutils container">
-<p>Some hidden toggle content!</p>
-<p>![]The answer is A</p>
+<p>Characteristics of a computer are A and B. Characteristics of a human are C and D. Humans have the creativity to think of algorithms. They will often plan these algorithms in pseudocode. They then translate this idea into actual code that can be interpreted by the computer. The computer can carry these computations very quickly.</p>
+</div>
+<ol class="arabic" start="2">
+<li><p>Which of the following is the LEAST similar to an algorithm?</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span> A. A recipe for a cake
+
+ B. A manual for constructing furniture
+
+ C. A textbook for a college class
+
+ D. A series of orders from your boss
+</pre></div>
+</div>
+</li>
+</ol>
+<div class="toggle docutils container">
+<p>The answer is C. Answer choices A, B, and D are all examples of a series of instructions, similar to an algorithm. While C, a textbook, might tell a user how to do something, it does not directly tell the user what to do.</p>
 </div>
 </section>
 <section id="activity">
@@ -479,6 +522,24 @@ document.write(`
                 <footer class="prev-next-footer">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="computing.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Computing Module</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="variables.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Variables</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               

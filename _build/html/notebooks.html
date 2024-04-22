@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Content with notebooks &#8212; Python For Business Professionals</title>
+    <title>&lt;no title&gt; &#8212; Computing and AI For Business Professionals</title>
   
   
   
@@ -57,13 +57,9 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Notebooks with MyST Markdown" href="markdown-notebooks.html" />
-    <link rel="prev" title="Here is my sample title" href="quiz.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -125,6 +121,8 @@
       
       
       
+        
+      
       <div class="bd-sidebar-primary bd-sidebar">
         
 
@@ -141,7 +139,7 @@
 
   
 
-<a class="navbar-brand logo" href="intro.html">
+<a class="navbar-brand logo" href="welcome.html">
   
   
   
@@ -152,8 +150,8 @@
       
     
     
-    <img src="_static/icon.png" class="logo__image only-light" alt="Python For Business Professionals - Home"/>
-    <script>document.write(`<img src="_static/icon.png" class="logo__image only-dark" alt="Python For Business Professionals - Home"/>`);</script>
+    <img src="_static/icon.png" class="logo__image only-light" alt="Computing and AI For Business Professionals - Home"/>
+    <script>document.write(`<img src="_static/icon.png" class="logo__image only-dark" alt="Computing and AI For Business Professionals - Home"/>`);</script>
   
   
 </a></div>
@@ -173,17 +171,25 @@
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
-                <a class="reference internal" href="intro.html">
-                    Welcome to your Jupyter Book
+                <a class="reference internal" href="welcome.html">
+                    Welcome
                 </a>
             </li>
         </ul>
-        <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="intro_page.html">Introduction to Computing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="quiz.html">Here is my sample title</a></li>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="computing.html">Computing Module</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="intro_computing.html">Introduction to Computing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="variables.html">Variables</a></li>
 
-<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Content with notebooks</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
+<li class="toctree-l2"><a class="reference internal" href="conditionals.html">Conditionals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="loops.html">Loops</a></li>
+<li class="toctree-l2"><a class="reference internal" href="final_computing.html">Final Computing Project</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="ai.html">Artificial Intelligence Module</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="intro_ai.html">Intro To Artificial Intelligence</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prompt_engineering.html">Prompt Engineering</a></li>
+<li class="toctree-l2"><a class="reference internal" href="final_ai.html">Final AI Project</a></li>
 </ul>
 </li>
 </ul>
@@ -388,7 +394,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Content with notebooks</h1>
+    <h1><no title></h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -397,11 +403,9 @@ document.write(`
                 <h2> Contents </h2>
             </div>
             <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#markdown-notebooks">Markdown + notebooks</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#myst-markdown">MyST markdown</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#code-blocks-and-outputs">Code blocks and outputs</a></li>
+                <ul class="simple visible nav section-nav flex-column">
 </ul>
+
             </nav>
         </div>
     </div>
@@ -412,87 +416,141 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="content-with-notebooks">
-<h1>Content with notebooks<a class="headerlink" href="#content-with-notebooks" title="Link to this heading">#</a></h1>
-<p>You can also create content with Jupyter Notebooks. This means that you can include
-code blocks and their outputs in your book.</p>
-<section id="markdown-notebooks">
-<h2>Markdown + notebooks<a class="headerlink" href="#markdown-notebooks" title="Link to this heading">#</a></h2>
-<p>As it is markdown, you can embed images, HTML, etc into your posts!</p>
-<p><img alt="" src="https://myst-parser.readthedocs.io/en/latest/_static/logo-wide.svg" /></p>
-<p>You can also <span class="math notranslate nohighlight">\(add_{math}\)</span> and</p>
-<div class="math notranslate nohighlight">
-\[
-math^{blocks}
-\]</div>
-<p>or</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{aligned}
-\mbox{mean} la_{tex} \\ \\
-math blocks
-\end{aligned}
-\end{split}\]</div>
-<p>But make sure you $Escape $your $dollar signs $you want to keep!</p>
-</section>
-<section id="myst-markdown">
-<h2>MyST markdown<a class="headerlink" href="#myst-markdown" title="Link to this heading">#</a></h2>
-<p>MyST markdown works in Jupyter Notebooks as well. For more information about MyST markdown, check
-out <a class="reference external" href="https://jupyterbook.org/content/myst.html">the MyST guide in Jupyter Book</a>,
-or see <a class="reference external" href="https://myst-parser.readthedocs.io/en/latest/">the MyST markdown documentation</a>.</p>
-</section>
-<section id="code-blocks-and-outputs">
-<h2>Code blocks and outputs<a class="headerlink" href="#code-blocks-and-outputs" title="Link to this heading">#</a></h2>
-<p>Jupyter Book will also embed your code blocks and output in your book.
-For example, here’s some sample Matplotlib code:</p>
+  <p>Here we will start with an Introduction to Python. We will cover 5 basics topic in this section: Variables and Operations, Conditionals, Loops, Functions, and OOP/List.</p>
+<p>Variables</p>
+<p>Introduction to Data:</p>
+<p>What is Data?</p>
+<p>Data is the foundation of modern computing, referring to the information or values that can be processed or manipulated by a program. In computing, data is represented in various forms such as numbers, text, images, sounds, and more complex structures like lists, dictionaries, and user-defined objects. These data types are essential as they dictate the kind of operations that programs can perform on the data, influencing both the functionality and performance of software applications.</p>
+<p>How is Data Stored in Computers?</p>
+<p>Data in computers is primarily stored in binary form, using combinations of zeros and ones. Each bit represents a power of two, and when combined, they can represent any numerical value. For instance, data such as integers, floating points, and strings are stored using specific encoding systems like ASCII or Unicode for text, and IEEE standards for floating-point numbers. These data types are then stored in memory locations that are accessible by the computer’s processor, allowing for fast retrieval and manipulation. Modern computers also use various storage devices like RAM, hard drives, and SSDs, which help in managing data efficiently for different needs—speed, permanence, or capacity.</p>
+<p>Operations on Data:</p>
+<p>Types of Operations that Can be Performed with Data:</p>
+<p>In programming languages like Python, data operations can be categorized into several types depending on the nature and structure of the data:</p>
+<p>Arithmetic Operations:</p>
+<p>These include basic mathematical operations such as addition (+), subtraction (-), multiplication (*), and division (/). Python also supports more complex arithmetic like modulus operations (%) which finds the remainder of a division, and exponentiation (**) to raise a number to the power of another.</p>
+<p>Logical Operations:</p>
+<p>Logical operations involve boolean logic and include operators like AND, OR, and NOT. These are crucial in decision-making processes in programming, helping to control the flow of execution based on certain conditions.</p>
+<p>Comparison Operations:</p>
+<p>These operations compare two values and return a boolean result. Common comparison operators include greater than (&gt;), less than (&lt;), equal to (==), not equal to (!=), greater than or equal to (&gt;=), and less than or equal to (&lt;=).</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">rcParams</span><span class="p">,</span> <span class="n">cycler</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ion</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Arithmetic Operations</span>
+<span class="n">a</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">)</span>  <span class="c1"># Output: 13</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">-</span> <span class="n">b</span><span class="p">)</span>  <span class="c1"># Output: 7</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">*</span> <span class="n">b</span><span class="p">)</span>  <span class="c1"># Output: 30</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">/</span> <span class="n">b</span><span class="p">)</span>  <span class="c1"># Output: 3.333</span>
+
+<span class="c1"># Logical Operations</span>
+<span class="n">a</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="n">b</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="ow">and</span> <span class="n">b</span><span class="p">)</span>  <span class="c1"># Output: False</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="ow">or</span> <span class="n">b</span><span class="p">)</span>   <span class="c1"># Output: True</span>
+<span class="nb">print</span><span class="p">(</span><span class="ow">not</span> <span class="n">a</span><span class="p">)</span>    <span class="c1"># Output: False</span>
+
+<span class="c1"># Comparison Operations</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span><span class="p">)</span>  <span class="c1"># Output: True</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">==</span> <span class="n">b</span><span class="p">)</span>  <span class="c1"># Output: False</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Conditionals</p>
+<p>Understanding Logic and Boolean:</p>
+<p>What is Logic?</p>
+<p>Logic in programming refers to the systematic principles of correct reasoning that dictate how decisions are made and actions are executed based on various conditions. It is foundational to programming as it ensures that programs behave correctly and efficiently under different scenarios. Logical constructs guide the flow of execution, enabling programs to make choices that lead to different outcomes based on the input data and predefined conditions.</p>
+<p>What is a Boolean?</p>
+<p>A Boolean is a simple type of data in programming that can hold one of two possible values: True or False. These values are instrumental in controlling program flow through conditional statements, which are constructs that allow decisions to be made dynamically during runtime based on boolean conditions. For example, a program might check if a user is authorized (True) or not (False) and redirect them accordingly.</p>
+<p>Logical Operations:</p>
+<p>Logical operations are fundamental in all programming languages, including Python, as they form the basis of decision-making in code. The primary logical operations are:</p>
+<p>AND: This operation returns True if both operands are true. It is typically used to ensure that multiple conditions are met before an action is taken. For instance, checking if a user is both authenticated and authorized to perform an action.</p>
+<p>OR: Returns True if at least one of the operands is true. This is useful in scenarios where multiple conditions might warrant the same action or outcome, such as granting access if a user is an admin or a moderator.</p>
+<p>NOT: This operation inverts the truth value of its operand. If the operand is True, NOT changes it to False, and vice versa. It’s commonly used to reverse conditions, such as triggering an action when a condition is not met</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">age</span> <span class="o">=</span> <span class="mi">18</span>
+<span class="n">has_license</span> <span class="o">=</span> <span class="kc">True</span>
+
+<span class="c1"># Check if the person is eligible to drive</span>
+<span class="k">if</span> <span class="n">age</span> <span class="o">&gt;=</span> <span class="mi">18</span> <span class="ow">and</span> <span class="n">has_license</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Eligible to drive.&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Not eligible to drive.&quot;</span><span class="p">)</span>
+
+<span class="c1"># Using logical operations in conditionals</span>
+<span class="n">age</span> <span class="o">=</span> <span class="mi">16</span>
+<span class="n">parent_permission</span> <span class="o">=</span> <span class="kc">False</span>
+
+<span class="k">if</span> <span class="n">age</span> <span class="o">&lt;</span> <span class="mi">18</span> <span class="ow">or</span> <span class="ow">not</span> <span class="n">parent_permission</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Needs parental permission to join the trip.&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Does not need parental permission to join the trip.&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;contextlib.ExitStack at 0x219f9465d10&gt;
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Eligible to drive.
+Needs parental permission to join the trip.
 </pre></div>
 </div>
 </div>
 </div>
+<p>Loops:</p>
+<p>Introduction to Loops:</p>
+<p>What is a Loop?
+A loop in programming is a fundamental control flow statement designed to repeat a block of code under certain conditions. The execution of loops is governed by a Boolean condition, which is checked before each iteration. If the condition evaluates to True, the loop continues running. It stops only when the condition is False or when an explicit termination command, like a break, is issued within the loop body. This allows programmers to efficiently handle tasks that require repeated execution using a concise amount of code.</p>
+<p>Using Loops:</p>
+<p>How to Iterate Using Loops:</p>
+<p>Iteration with loops is achieved by executing a block of code multiple times until a specific condition is altered, typically involving modification of variables within the loop. For example, you might increment a counter each time the loop executes, or append results to a list. This repetitive action is what allows loops to perform tasks such as aggregating data, processing input, or automating repetitive tasks efficiently.</p>
+<p>Differences between For and While Loops:</p>
+<p>For Loop: This type of loop is generally used for iterating over a sequence such as a list, tuple, dictionary, or string. It is also ideal for executing a block of code a specific number of times, utilizing a counter to track iterations. The number of iterations is usually determined prior to the start of the loop, making the for loop a choice for situations where the endpoint is known.</p>
+<p>While Loop: Contrasting with the for loop, the while loop is used when the number of iterations is unknown before the loop begins. It executes as long as a specified condition remains true. This makes while loops suitable for scenarios where you need to continue looping until a particular state is reached or a certain condition changes.</p>
+<p>Understanding Loop Termination Points:
+Identifying and setting loop termination points is critical to prevent infinite loops, which can cause programs to freeze or crash by looping indefinitely. To manage loop execution:</p>
+<p>Break: This statement immediately exits the loop, regardless of the loop condition. It is often used to exit a loop when an external condition is met, or a particular event occurs.</p>
+<p>Continue: This statement skips the remaining code inside the loop for the current iteration and proceeds to the next cycle of the loop. It is useful for bypassing certain conditions within a loop without breaking out of the loop entirely.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Fixing random state for reproducibility</span>
-<span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">19680801</span><span class="p">)</span>
-
-<span class="n">N</span> <span class="o">=</span> <span class="mi">10</span>
-<span class="n">data</span> <span class="o">=</span> <span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">logspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span> <span class="o">+</span> <span class="n">ii</span> <span class="k">for</span> <span class="n">ii</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">)]</span>
-<span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">data</span><span class="p">)</span><span class="o">.</span><span class="n">T</span>
-<span class="n">cmap</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">cm</span><span class="o">.</span><span class="n">coolwarm</span>
-<span class="n">rcParams</span><span class="p">[</span><span class="s1">&#39;axes.prop_cycle&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">cycler</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">cmap</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">N</span><span class="p">)))</span>
-
-
-<span class="kn">from</span> <span class="nn">matplotlib.lines</span> <span class="kn">import</span> <span class="n">Line2D</span>
-<span class="n">custom_lines</span> <span class="o">=</span> <span class="p">[</span><span class="n">Line2D</span><span class="p">([</span><span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="n">cmap</span><span class="p">(</span><span class="mf">0.</span><span class="p">),</span> <span class="n">lw</span><span class="o">=</span><span class="mi">4</span><span class="p">),</span>
-                <span class="n">Line2D</span><span class="p">([</span><span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="n">cmap</span><span class="p">(</span><span class="mf">.5</span><span class="p">),</span> <span class="n">lw</span><span class="o">=</span><span class="mi">4</span><span class="p">),</span>
-                <span class="n">Line2D</span><span class="p">([</span><span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="n">cmap</span><span class="p">(</span><span class="mf">1.</span><span class="p">),</span> <span class="n">lw</span><span class="o">=</span><span class="mi">4</span><span class="p">)]</span>
-
-<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
-<span class="n">lines</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">custom_lines</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;Cold&#39;</span><span class="p">,</span> <span class="s1">&#39;Medium&#39;</span><span class="p">,</span> <span class="s1">&#39;Hot&#39;</span><span class="p">]);</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Iterating through a list</span>
+<span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Alice&quot;</span><span class="p">,</span> <span class="s2">&quot;Bob&quot;</span><span class="p">,</span> <span class="s2">&quot;Charlie&quot;</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">names</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Hello, </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">!&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/09d79d7122094cb0f63569e187632beddce38ec285809b65da60f5f6ffbddd0d.png" src="_images/09d79d7122094cb0f63569e187632beddce38ec285809b65da60f5f6ffbddd0d.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Hello, Alice!
+Hello, Bob!
+Hello, Charlie!
+</pre></div>
 </div>
 </div>
-<p>There is a lot more that you can do with outputs (such as including interactive outputs)
-with your book. For more information about this, see <a class="reference external" href="https://jupyterbook.org">the Jupyter Book documentation</a></p>
-</section>
-<div class="toctree-wrapper compound">
 </div>
-</section>
+<p>This for loop iterates through each element in the list names and prints a greeting for each person.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Using a while loop to count down from 5</span>
+<span class="n">count</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="k">while</span> <span class="n">count</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">count</span><span class="p">)</span>
+    <span class="n">count</span> <span class="o">-=</span> <span class="mi">1</span>  <span class="c1"># Decrease count by 1 each time</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Go!&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>5
+4
+3
+2
+1
+Go!
+</pre></div>
+</div>
+</div>
+</div>
+<p>In this while loop example, count starts at 5 and is decremented each time the loop iterates. When count reaches zero, the loop terminates, and “Go!” is printed.</p>
 
     <script type="text/x-thebe-config">
     {
@@ -524,24 +582,6 @@ with your book. For more information about this, see <a class="reference externa
                 <footer class="prev-next-footer">
                   
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="quiz.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Here is my sample title</p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="markdown-notebooks.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Notebooks with MyST Markdown</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
 </div>
                 </footer>
               
@@ -557,11 +597,9 @@ with your book. For more information about this, see <a class="reference externa
     <i class="fa-solid fa-list"></i> Contents
   </div>
   <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#markdown-notebooks">Markdown + notebooks</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#myst-markdown">MyST markdown</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#code-blocks-and-outputs">Code blocks and outputs</a></li>
+    <ul class="simple visible nav section-nav flex-column">
 </ul>
+
   </nav></div>
 
 </div></div>
