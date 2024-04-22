@@ -15,6 +15,7 @@ chapters:
 - file: ai
   sections:
   - file: intro_ai
+  - file: ML
   - file: prompt_engineering
   - file: final_ai
 
