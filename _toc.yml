@@ -10,6 +10,7 @@ chapters:
   - file: variables
   - file: conditionals
   - file: loops
+  - file: midterm
   - file: final_computing
 - file: ai
   sections:

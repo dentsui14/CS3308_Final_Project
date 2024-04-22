@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Loops &#8212; Computing and AI For Business Professionals</title>
+    <title>Midterm Coding Assessment &#8212; Computing and AI For Business Professionals</title>
   
   
   
@@ -57,11 +57,11 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'loops';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'midterm';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Midterm Coding Assessment" href="midterm.html" />
-    <link rel="prev" title="Conditionals" href="conditionals.html" />
+    <link rel="next" title="Final Computing Project" href="final_computing.html" />
+    <link rel="prev" title="Loops" href="loops.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -182,8 +182,8 @@
 <li class="toctree-l2"><a class="reference internal" href="variables.html">Variables</a></li>
 
 <li class="toctree-l2"><a class="reference internal" href="conditionals.html">Conditionals</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Loops</a></li>
-<li class="toctree-l2"><a class="reference internal" href="midterm.html">Midterm Coding Assessment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="loops.html">Loops</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Midterm Coding Assessment</a></li>
 <li class="toctree-l2"><a class="reference internal" href="final_computing.html">Final Computing Project</a></li>
 </ul>
 </li>
@@ -247,7 +247,7 @@
       
       
       
-      <li><a href="https://mybinder.org/v2/gh/dentsui14/CS3308_Final_Project/master?urlpath=tree/loops.ipynb" target="_blank"
+      <li><a href="https://mybinder.org/v2/gh/dentsui14/CS3308_Final_Project/master?urlpath=tree/midterm.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
    title="Launch onBinder"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -285,7 +285,7 @@
 
 
 
-<a href="https://github.com/dentsui14/CS3308_Final_Project/issues/new?title=Issue%20on%20page%20%2Floops.html&body=Your%20issue%20content%20here." target="_blank"
+<a href="https://github.com/dentsui14/CS3308_Final_Project/issues/new?title=Issue%20on%20page%20%2Fmidterm.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button"
    title="Open an issue"
    data-bs-placement="bottom" data-bs-toggle="tooltip"
@@ -311,7 +311,7 @@
       
       
       
-      <li><a href="_sources/loops.ipynb" target="_blank"
+      <li><a href="_sources/midterm.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -395,7 +395,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Loops</h1>
+    <h1>Midterm Coding Assessment</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -405,11 +405,12 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-a-loop">What is a loop?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-iterate-using-loops">How to Iterate Using Loops:</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#differences-between-for-and-while-loops">Differences between For and While Loops:</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#for-loop">For Loop:</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#while-loop">While Loop:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problem-statement">Problem Statement</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#requirements">Requirements</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-representation">Data Representation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operations-on-data">Operations on Data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conditionals-and-logic">Conditionals and Logic:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#loops">Loops:</a></li>
 </ul>
 </li>
 </ul>
@@ -423,51 +424,73 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="loops">
-<h1>Loops<a class="headerlink" href="#loops" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="midterm-coding-assessment">
+<h1>Midterm Coding Assessment<a class="headerlink" href="#midterm-coding-assessment" title="Link to this heading">#</a></h1>
 <p><strong>REMINDER</strong> Click on the rocket symbol in the top right and press live code. Go to <a class="reference internal" href="welcome.html"><span class="doc">Welcome</span></a> for more information!</p>
-<section id="what-is-a-loop">
-<h2>What is a loop?<a class="headerlink" href="#what-is-a-loop" title="Link to this heading">#</a></h2>
-<p>A loop in programming is a fundamental control flow statement designed to repeat a block of code under certain conditions. The execution of loops is governed by a Boolean condition, which is checked before each iteration. If the condition evaluates to True, the loop continues running. It stops only when the condition is False or when an explicit termination command, like a break, is issued within the loop body. This allows programmers to efficiently handle tasks that require repeated execution using a concise amount of code.</p>
+<section id="problem-statement">
+<h2>Problem Statement<a class="headerlink" href="#problem-statement" title="Link to this heading">#</a></h2>
+<p>Create a Python script to analyze student grades. This script will automatically classify grades for a predefined list of students based on their average grade.</p>
 </section>
-<section id="how-to-iterate-using-loops">
-<h2>How to Iterate Using Loops:<a class="headerlink" href="#how-to-iterate-using-loops" title="Link to this heading">#</a></h2>
-<p>Iteration with loops is achieved by executing a block of code multiple times until a specific condition is altered, typically involving modification of variables within the loop. For example, you might increment a counter each time the loop executes, or append results to a list. This repetitive action is what allows loops to perform tasks such as aggregating data, processing input, or automating repetitive tasks efficiently.</p>
+<section id="requirements">
+<h2>Requirements<a class="headerlink" href="#requirements" title="Link to this heading">#</a></h2>
+<section id="data-representation">
+<h3>Data Representation<a class="headerlink" href="#data-representation" title="Link to this heading">#</a></h3>
+<p>Use a dictionary to store each student’s name as a key and their grades (a list of integers) as the value.</p>
 </section>
-<section id="differences-between-for-and-while-loops">
-<h2>Differences between For and While Loops:<a class="headerlink" href="#differences-between-for-and-while-loops" title="Link to this heading">#</a></h2>
-<section id="for-loop">
-<h3>For Loop:<a class="headerlink" href="#for-loop" title="Link to this heading">#</a></h3>
-<p>This type of loop is generally used for iterating over a sequence such as a list, tuple, dictionary, or string. It is also ideal for executing a block of code a specific number of times, utilizing a counter to track iterations. The number of iterations is usually determined prior to the start of the loop, making the for loop a choice for situations where the endpoint is known.</p>
+<section id="operations-on-data">
+<h3>Operations on Data<a class="headerlink" href="#operations-on-data" title="Link to this heading">#</a></h3>
+<p>Write a function to calculate the average grade for each student.</p>
+</section>
+<section id="conditionals-and-logic">
+<h3>Conditionals and Logic:<a class="headerlink" href="#conditionals-and-logic" title="Link to this heading">#</a></h3>
+<p>Implement logic to categorize each student’s average grade:</p>
+<ul class="simple">
+<li><p>“Excellent” for averages &gt;= 90.</p></li>
+<li><p>“Good” for averages &gt;= 70 and &lt; 90.</p></li>
+<li><p>“Average” for averages &gt;= 50 and &lt; 70.</p></li>
+<li><p>“Poor” for averages &lt; 50.</p></li>
+</ul>
+</section>
+<section id="loops">
+<h3>Loops:<a class="headerlink" href="#loops" title="Link to this heading">#</a></h3>
+<p>Use a for loop to iterate through the dictionary, calculate the average grade for each student, and print their name with their grade category.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Iterating through a list</span>
-<span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Alice&quot;</span><span class="p">,</span> <span class="s2">&quot;Bob&quot;</span><span class="p">,</span> <span class="s2">&quot;Charlie&quot;</span><span class="p">]</span>
-<span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">names</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Hello, </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">!&quot;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">calculate_average</span><span class="p">(</span><span class="n">grades</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Calculate the average of a list of grades.&quot;&quot;&quot;</span>
+    <span class="k">pass</span>
+
+<span class="k">def</span> <span class="nf">print_student_details</span><span class="p">(</span><span class="n">grades_dict</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Print each student&#39;s name, average grade, and category.&quot;&quot;&quot;</span>
+    <span class="k">pass</span>
+
+<span class="c1"># Dictionary to store student names and their grades</span>
+<span class="n">student_grades</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;Alice&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">88</span><span class="p">,</span> <span class="mi">92</span><span class="p">,</span> <span class="mi">100</span><span class="p">],</span>
+    <span class="s2">&quot;Bob&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">70</span><span class="p">,</span> <span class="mi">85</span><span class="p">,</span> <span class="mi">78</span><span class="p">],</span>
+    <span class="s2">&quot;Charlie&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">45</span><span class="p">,</span> <span class="mi">55</span><span class="p">,</span> <span class="mi">65</span><span class="p">],</span>
+    <span class="s2">&quot;Diana&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">95</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="mi">98</span><span class="p">]</span>
+<span class="p">}</span>
+
+<span class="c1"># Expected output for verification</span>
+<span class="n">expected_output</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s2">&quot;Alice: Excellent (Avg: 93.33)&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Bob: Good (Avg: 77.67)&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Charlie: Average (Avg: 55.00)&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Diana: Excellent (Avg: 94.33)&quot;</span>
+<span class="p">]</span>
+
+<span class="c1"># Running the function and capturing the output</span>
+<span class="n">actual_output</span> <span class="o">=</span> <span class="n">print_student_details</span><span class="p">(</span><span class="n">student_grades</span><span class="p">)</span>
+
+<span class="c1"># Asserting the actual output matches the expected output</span>
+<span class="k">assert</span> <span class="n">actual_output</span> <span class="o">==</span> <span class="n">expected_output</span><span class="p">,</span> <span class="s2">&quot;The output does not match the expected results.&quot;</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;All tests passed successfully!&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
-<p>We will go more in depth into lists at a later chapter. Just know that the for loop iterates through every value in the list. Every iteration is performed with the value of name set to the next value in the list.</p>
-</section>
-<section id="while-loop">
-<h3>While Loop:<a class="headerlink" href="#while-loop" title="Link to this heading">#</a></h3>
-<p>Contrasting with the for loop, the while loop is used when the number of iterations is unknown before the loop begins. It executes as long as a specified condition remains true. This makes while loops suitable for scenarios where you need to continue looping until a particular state is reached or a certain condition changes.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Using a while loop to count down from 5</span>
-<span class="n">count</span> <span class="o">=</span> <span class="mi">5</span>
-<span class="k">while</span> <span class="n">count</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">count</span><span class="p">)</span>
-    <span class="n">count</span> <span class="o">-=</span> <span class="mi">1</span>  <span class="c1"># Decrease count by 1 each time</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Go!&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<p>Try changing the value of count to 10. Because count decrements every loop, this will change the length of our countdown from 5 to 10.</p>
-<p>Also, try removing count -= 1. Notice that the code will run infinitely. Make sure to stop the code’s execution to prevent the kernel from crashing. This highlights how important is in a while loop that we are moving towards the condition in the boolean evaluating as False instead of True.</p>
 </section>
 </section>
 </section>
@@ -503,20 +526,20 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="conditionals.html"
+       href="loops.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Conditionals</p>
+        <p class="prev-next-title">Loops</p>
       </div>
     </a>
     <a class="right-next"
-       href="midterm.html"
+       href="final_computing.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Midterm Coding Assessment</p>
+        <p class="prev-next-title">Final Computing Project</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -536,11 +559,12 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-a-loop">What is a loop?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-iterate-using-loops">How to Iterate Using Loops:</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#differences-between-for-and-while-loops">Differences between For and While Loops:</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#for-loop">For Loop:</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#while-loop">While Loop:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problem-statement">Problem Statement</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#requirements">Requirements</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-representation">Data Representation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operations-on-data">Operations on Data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conditionals-and-logic">Conditionals and Logic:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#loops">Loops:</a></li>
 </ul>
 </li>
 </ul>
