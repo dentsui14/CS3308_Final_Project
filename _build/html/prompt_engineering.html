@@ -1,0 +1,603 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Prompt Engineering &#8212; Computing and AI For Business Professionals</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'prompt_engineering';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Final AI Project" href="final_ai.html" />
+    <link rel="prev" title="Intro To Artificial Intelligence" href="intro_ai.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="welcome.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/icon.png" class="logo__image only-light" alt="Computing and AI For Business Professionals - Home"/>
+    <script>document.write(`<img src="_static/icon.png" class="logo__image only-dark" alt="Computing and AI For Business Professionals - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="welcome.html">
+                    Welcome
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="computing.html">Computing Module</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="intro_computing.html">Introduction to Computing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="variables.html">Variables</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="conditionals.html">Conditionals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="loops.html">Loops</a></li>
+<li class="toctree-l2"><a class="reference internal" href="midterm.html">Midterm Coding Assessment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="final_computing.html">Final Computing Project</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="ai.html">Artificial Intelligence Module</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="intro_ai.html">Intro To Artificial Intelligence</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Prompt Engineering</a></li>
+<li class="toctree-l2"><a class="reference internal" href="final_ai.html">Final AI Project</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://mybinder.org/v2/gh/dentsui14/CS3308_Final_Project/master?urlpath=tree/prompt_engineering.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onBinder"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="_static/images/logo_binder.svg">
+  </span>
+<span class="btn__text-container">Binder</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="initThebeSBT()"
+  class="btn btn-sm btn-launch-thebe dropdown-item"
+  title="Launch Thebe"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-play"></i>
+  </span>
+<span class="btn__text-container">Live Code</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+<a href="https://github.com/dentsui14/CS3308_Final_Project/issues/new?title=Issue%20on%20page%20%2Fprompt_engineering.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button"
+   title="Open an issue"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+
+</a>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/prompt_engineering.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Prompt Engineering</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-a-prompt">What is a prompt?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#patterns">Patterns</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#persona-pattern">Persona Pattern</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#audience-pattern">Audience Pattern</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cognitive-verifier-pattern">Cognitive Verifier Pattern</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#activity">Activity</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="prompt-engineering">
+<h1>Prompt Engineering<a class="headerlink" href="#prompt-engineering" title="Link to this heading">#</a></h1>
+<section id="what-is-a-prompt">
+<h2>What is a prompt?<a class="headerlink" href="#what-is-a-prompt" title="Link to this heading">#</a></h2>
+<p>Now that you have gained an understanding of the fundamentals of Artificial Intelligence, we are ready to apply our knowledge to one of the most recent breakthroughs in AI: ChatGPT and Generative AI. As the name suggests, Generative AI involves using AI to generate written or audiovisual media. However, what might be surprising is that ChatGPT doesn’t differ that much from the AI that we have already talked about. ChatGPT actually employs predictive modeling.</p>
+<p>First, we supply ChatGPT with a passage from the internet. It will take a section of text and will attempt to predict the text that would follow. Then, ChatGPT compares its predicted output to the actual text that follows it. From here, ChatGPT adjusts its model to account for differences between the predicted and actual text. This is repeated over and over again for more than half a terabyte of pure text information.</p>
+<p>After the model is trained, given some user <strong>prompt</strong> or input, the model simply predicts the next word word. Then, it appends the generated word to the prompt and once again and predict the next word. This is repeated over and over again until the machine fully crafts its response.</p>
+<p>For example, consider this conversation.</p>
+<a class="bg-primary mb-1 reference internal image-reference" href="_images/round_earth.png"><img alt="_images/round_earth.png" class="bg-primary mb-1 align-center" src="_images/round_earth.png" style="height: 300px;" /></a>
+<a class="bg-primary mb-1 reference internal image-reference" href="_images/flat_earth.png"><img alt="_images/flat_earth.png" class="bg-primary mb-1 align-center" src="_images/flat_earth.png" style="height: 500px;" /></a>
+<p>Because ChatGPT uses its previous output to further inform its next output, it implicitly knew that I was asking for it to refute its previous explanation on the Earth being round. This is powerful because we can provide prompts to influence ChatGPT to provide us better output in the future.</p>
+</section>
+<section id="patterns">
+<h2>Patterns<a class="headerlink" href="#patterns" title="Link to this heading">#</a></h2>
+<p>Because ChatGPT is trained on human text, it picks up on patterns in our language. A <strong>pattern</strong> is a specific text or class of text input that produces a consistent output from ChatGPT. Consider these two prompts:</p>
+<a class="bg-primary mb-1 reference internal image-reference" href="_images/jingle_bells.png"><img alt="_images/jingle_bells.png" class="bg-primary mb-1 align-center" src="_images/jingle_bells.png" style="height: 400px;" /></a>
+<p>While both sentences mean the same thing (making a sound from a bell), the wording of the prompt drastically changed our output. When we specifically said jingle bells, jingle bells, the AI model has seen this pattern in the context of the song “Jingle Bells”. Thus, it replies with the expected rest of the lyrics. In the second prompt “ring the bell”, our more general prompt yeilded a more general answer, as this phrase has been used in less specific contexts.</p>
+<p>Here are some powerful patterns that allow us to fully utilize ChatGPT’s capabilities.</p>
+</section>
+<section id="persona-pattern">
+<h2>Persona Pattern<a class="headerlink" href="#persona-pattern" title="Link to this heading">#</a></h2>
+<p>The persona pattern is one of the most powerful and flexible prompts. You can ask ChatGPT to answer your question as if they were an expert in this specific field, often providing an improved response.</p>
+<p>Consider us once again asking ChatGPT for the shape of the Earth, instead this time we added some extra specifics.</p>
+<a class="bg-primary mb-1 reference internal image-reference" href="_images/improved_round_earth.png"><img alt="_images/improved_round_earth.png" class="bg-primary mb-1 align-center" src="_images/improved_round_earth.png" style="height: 500px;" /></a>
+<p>Notice how when we told ChatGPT to act as a physicist, we also specified the types of desired behaviors attached to being a physicist, such as providing clear, in-depth explanations and being great at teaching. As a result, we obtained a much better answer. It more accurately described what it means for the Earth to be an oblate spheroid and provided the scientific mechanisms for this shape. It also went in detail talking about how the shape of the Earth has been verified by various scientific methods without us even asking.</p>
+</section>
+<section id="audience-pattern">
+<h2>Audience Pattern<a class="headerlink" href="#audience-pattern" title="Link to this heading">#</a></h2>
+<p>Not only can we ask ChatGPT to assume a persona, but also we can ask it to tailor its response to a specific type of person to further influence its results.</p>
+<p>Observe what happens when we tell our physicist ChatGPT to give its explanation to a specific audience.</p>
+<a class="bg-primary mb-1 reference internal image-reference" href="_images/middle_school.png"><img alt="_images/middle_school.png" class="bg-primary mb-1 align-center" src="_images/middle_school.png" style="height: 500px;" /></a>
+<p>From this wording, the response still maintained all of its scientific rigor while also providing another angle to view the subject through an interesting metaphor.</p>
+</section>
+<section id="cognitive-verifier-pattern">
+<h2>Cognitive Verifier Pattern<a class="headerlink" href="#cognitive-verifier-pattern" title="Link to this heading">#</a></h2>
+<p>This is another powerful pattern. Oftentimes, we do not have the content knowledge or information to properly prompt ChatGPT with the correct pattern to create our desired output. Thus, we instead prompt ChatGPT to give us clarifying questions whenever we have a question. After we answer these questions, ChatGPT combines all of this information to produce its answer. By asking ChatGPT to prompt us with questions, we are further able to prompt it with the correct information to get our desired output. Let’s see an example of how this works.</p>
+<p>First we prime the chatbot.</p>
+<a class="bg-primary mb-1 reference internal image-reference" href="_images/cognitive_verifier_-1.png"><img alt="_images/cognitive_verifier_-1.png" class="bg-primary mb-1 align-center" src="_images/cognitive_verifier_-1.png" style="height: 200px;" /></a>
+<p>Next we ask a vague question. Note that the question does not contain enough information for a specific answer.</p>
+<a class="bg-primary mb-1 reference internal image-reference" href="_images/cognitive_verifier_0.png"><img alt="_images/cognitive_verifier_0.png" class="bg-primary mb-1 align-center" src="_images/cognitive_verifier_0.png" style="height: 100px;" /></a>
+<p>Then it will respond with a series of questions. This ChatGPT prompting us to answer its query.</p>
+<a class="bg-primary mb-1 reference internal image-reference" href="_images/cognitive_verifier_1.png"><img alt="_images/cognitive_verifier_1.png" class="bg-primary mb-1 align-center" src="_images/cognitive_verifier_1.png" style="height: 300px;" /></a>
+<p>We supply it answers.</p>
+<a class="bg-primary mb-1 reference internal image-reference" href="_images/cognitive_verifier_2.png"><img alt="_images/cognitive_verifier_2.png" class="bg-primary mb-1 align-center" src="_images/cognitive_verifier_2.png" style="height: 300px;" /></a>
+<p>Then it summarizes our answers to its prompt. Using these answers, it provides a fully fleshed out response, citing the information we gave.</p>
+<a class="bg-primary mb-1 reference internal image-reference" href="_images/cognitive_verifier_3.png"><img alt="_images/cognitive_verifier_3.png" class="bg-primary mb-1 align-center" src="_images/cognitive_verifier_3.png" style="height: 500px;" /></a>
+</section>
+<section id="activity">
+<h2>Activity<a class="headerlink" href="#activity" title="Link to this heading">#</a></h2>
+<p>For this activity, you will use <a class="reference external" href="http://chat.openai.com">chat.openai.com</a>.</p>
+<p>Now that you have seen various prompt engineering strategies, it is your turn implement them yourselves. Write 4 prompts to research some topic in AI. One of the prompts will include no special patterns, and the other three will each use the persona pattern, the audience pattern, and the cognitive verifier pattern. Record each of these prompts and write a paragraph explaining the similarities and differences between the outputs of the four prompts.</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "dentsui14/CS3308_Final_Project",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="intro_ai.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Intro To Artificial Intelligence</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="final_ai.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Final AI Project</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-a-prompt">What is a prompt?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#patterns">Patterns</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#persona-pattern">Persona Pattern</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#audience-pattern">Audience Pattern</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cognitive-verifier-pattern">Cognitive Verifier Pattern</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#activity">Activity</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Jupyter Book Community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

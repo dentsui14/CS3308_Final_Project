@@ -1,19 +1,20 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
-title: Python For Business Professionals
+title: Computing and AI For Business Professionals
 author: The Jupyter Book Community
 logo: icon.png
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
-execute:
-  execute_notebooks: off
 
 # Define the name of the latex output file for PDF builds
 latex:
   latex_documents:
     targetname: book.tex
+
+execute:
+  execute_notebooks: 'off'
 
 # Add a bibtex file so that we can create citations
 bibtex_bibfiles:
@@ -24,11 +25,10 @@ repository:
   url: https://github.com/dentsui14/CS3308_Final_Project
 
 launch_buttons:
-  binderhub_url: "https://mybinder.org/v2/gh/dentsui14/CS3308_Final_Project/HEAD"
+  binderhub_url: "https://mybinder.org/"
   thebe: true
 
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
 html:
   use_issues_button: true
-  use_repository_button: true

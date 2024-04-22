@@ -1,0 +1,618 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Introduction to Computing &#8212; Computing and AI For Business Professionals</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'intro_computing';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Variables" href="variables.html" />
+    <link rel="prev" title="Computing Module" href="computing.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="welcome.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/icon.png" class="logo__image only-light" alt="Computing and AI For Business Professionals - Home"/>
+    <script>document.write(`<img src="_static/icon.png" class="logo__image only-dark" alt="Computing and AI For Business Professionals - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="welcome.html">
+                    Welcome
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="computing.html">Computing Module</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Introduction to Computing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="variables.html">Variables</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="conditionals.html">Conditionals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="loops.html">Loops</a></li>
+<li class="toctree-l2"><a class="reference internal" href="midterm.html">Midterm Coding Assessment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="final_computing.html">Final Computing Project</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="ai.html">Artificial Intelligence Module</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="intro_ai.html">Intro To Artificial Intelligence</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prompt_engineering.html">Prompt Engineering</a></li>
+<li class="toctree-l2"><a class="reference internal" href="final_ai.html">Final AI Project</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://mybinder.org/v2/gh/dentsui14/CS3308_Final_Project/master?urlpath=tree/intro_computing.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onBinder"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="_static/images/logo_binder.svg">
+  </span>
+<span class="btn__text-container">Binder</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="initThebeSBT()"
+  class="btn btn-sm btn-launch-thebe dropdown-item"
+  title="Launch Thebe"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-play"></i>
+  </span>
+<span class="btn__text-container">Live Code</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+<a href="https://github.com/dentsui14/CS3308_Final_Project/issues/new?title=Issue%20on%20page%20%2Fintro_computing.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button"
+   title="Open an issue"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+
+</a>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/intro_computing.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Introduction to Computing</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#linear-vs-binary-search-algorithm">Linear vs Binary Search Algorithm</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pseudocode">Pseudocode</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mutliple-choice-quiz">Mutliple-Choice Quiz</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#activity">Activity</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="introduction-to-computing">
+<h1>Introduction to Computing<a class="headerlink" href="#introduction-to-computing" title="Link to this heading">#</a></h1>
+<p><strong>REMINDER</strong> Click on the rocket symbol in the top right and press live code. Go to <a class="reference internal" href="welcome.html"><span class="doc">Welcome</span></a> for more information!</p>
+<p>You probably use computers every day to send emails, write reports, create presentations, or watch entertainment. However, that is only a very small subset of the full capabilities of computers. Currently, almost everything in the business world is supported by computers. Google’s internet servers have allowed the entire world to have access to its services at an extremely high speed. Amazon may collect billions of customer interactions to provide product recommendations using artificial intelligence. By better understanding the fundamentals of computing and artificial intelligence, you will be able to leverage this knowledge to empower your business solutions and daily operations, even if you aren’t a full-blown programmer.</p>
+<p>Computers are powerful because they can complete calculations at a level of speed and accuracy that is impossible for humans. Think about how long it would take for you to calculate 7823 x 9201, versus a computer which can solve it instantaneously. However, computers are also extremely dumb. Without any human intervention, it cannot do anything beyond storing information and performing arithmetic. Thus, in solving any problem, the computer’s only role is to carry out rote calculations. It is the human’s role to tell it what to do.</p>
+<a class="bg-primary mb-1 reference internal image-reference" href="_images/fast_dumb.png"><img alt="Open book with X covering the left half." class="bg-primary mb-1 align-center" src="_images/fast_dumb.png" style="height: 250px;" /></a>
+<p>The list of commands that a human uses to instruct a computer to complete a task is called an <strong>algorithm</strong>. In essence, the act of using a computer to solve problems involves creating algorithms. Once a programmer has designed an algorithm, they use <strong>code</strong>, the language of a computer, to write this algorithm as a <strong>program</strong>.</p>
+<p>Let’s see a detailed example of how one might design and implement an algorithm and program.</p>
+<section id="linear-vs-binary-search-algorithm">
+<h2>Linear vs Binary Search Algorithm<a class="headerlink" href="#linear-vs-binary-search-algorithm" title="Link to this heading">#</a></h2>
+<p>Suppose we are looking for the word “professional” in the English Dictionary. One algorithm that we can use to solve this is to flip one by one through each page of the dictionary. For each page check to see if that word is contained in the dictionary. If it is then we choose that word. Otherwise we flip the page and check the next word. This is guaranteed to work but obviously very slow. This is known as a <strong>linear search</strong>.</p>
+<p>Is this how a human would normally search for a word in a dictionary? Of course not! What would you do? Open to the middle of the book. Let’s say that the middle of the book contains words of the letter “M”. Because P is after “M” we know that the word “professional” is in the second half of the book! Thus, we can completely eliminate checking the first half of the book and only worry about the second half of the book. We can repeat this process again and again, halving the book each time until we find our word. This is known as a <strong>binary search</strong>.</p>
+<a class="bg-primary mb-1 reference internal image-reference" href="_images/book.png"><img alt="Computer with caption fast but dumb. Human with caption slow but smart." class="bg-primary mb-1 align-center" src="_images/book.png" style="height: 200px;" /></a>
+<p>How much more efficient is the binary search compared the linear search? There are around 1,000,000 words in the English language. For our linear search, this would require us to read the majority of the book, somewhere between <strong>500,000</strong> to <strong>1,000,000</strong> words! On the other hand, in the second algorithm, we half our search space for every word. 1,000,000 becomes 500,000,000 becomes 250,000,000 and so on. After halving only <span class="math notranslate nohighlight">\(log_2(1,000,000) = \)</span><strong>20</strong> times we are guaranteed to find any word!</p>
+<p>Now, let’s actually write the second algorithm. When we write an algorithm in English, it is called <strong>pseudocode</strong>. This is because actual code is written in a <strong>programming language</strong> such as Python, Java, or C++.</p>
+</section>
+<section id="pseudocode">
+<h2>Pseudocode<a class="headerlink" href="#pseudocode" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Obtain a dictionary (not to be confused with a Python dictionary!).</p></li>
+<li><p>Repeat steps 3-7 until the word has been found.</p></li>
+<li><p>Open the dictionary to the middle of it.</p></li>
+<li><p>If the word on the page is the word we are looking for, read the definition and exit.</p></li>
+<li><p>Otherwise, if the word on the page alphabetically is before the word we are looking for, discard the first half of the book.</p></li>
+<li><p>Otherwise, if the word on the page is alphabetically after the word we are looking for, discard the second half of the book.</p></li>
+<li><p>Otherwise, If the dictionary is empty, then exit, as the word is not in the dictionary.</p></li>
+</ol>
+<p>By the end of this module, you will learn the Python syntax to write this pseudocode. The dictionary is represented as a <strong>list</strong> that will be stored inside a <strong>variable</strong>. Step 2’s repetition until a condition is satisfied will be implemented using <strong>loops</strong>. The if, otherwise logic used from steps 4-7 will be implemented using <strong>conditionals</strong>. Lastly, we can embed this algorithm into a <strong>function</strong> so it can be called many times on a variety of inputs.</p>
+</section>
+<section id="mutliple-choice-quiz">
+<h2>Mutliple-Choice Quiz<a class="headerlink" href="#mutliple-choice-quiz" title="Link to this heading">#</a></h2>
+<p>Answer the following multiple choice questions.</p>
+<ol class="arabic">
+<li><p>Which of the following are characteristics of a computer? Which of the following are characteristics of a human?</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span> A. Able to perform a large number of operations efficiently.
+
+ B. &quot;Thinks&quot; in code
+
+ C. &quot;Thinks&quot; in pseudocode
+
+ D. Able to plan the solution of a problem
+</pre></div>
+</div>
+</li>
+</ol>
+<div class="toggle docutils container">
+<p>Characteristics of a computer are A and B. Characteristics of a human are C and D. Humans have the creativity to think of algorithms. They will often plan these algorithms in pseudocode. They then translate this idea into actual code that can be interpreted by the computer. The computer can carry these computations very quickly.</p>
+</div>
+<ol class="arabic" start="2">
+<li><p>Which of the following is the LEAST similar to an algorithm?</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span> A. A recipe for a cake
+
+ B. A manual for constructing furniture
+
+ C. A textbook for a college class
+
+ D. A series of orders from your boss
+</pre></div>
+</div>
+</li>
+</ol>
+<div class="toggle docutils container">
+<p>The answer is C. Answer choices A, B, and D are all examples of a series of instructions, similar to an algorithm. While C, a textbook, might tell a user how to do something, it does not directly tell the user what to do.</p>
+</div>
+</section>
+<section id="activity">
+<h2>Activity<a class="headerlink" href="#activity" title="Link to this heading">#</a></h2>
+<p>Think about a problem that you encounter in your work or daily life. Now that you have learned about algorithms, write some psuedocode to solve this problem. Remember, pseudocode should be a list of precise English instructions that another person can easily follow to complete the task. It should contain some form of repetition and If-Otherwise decisionmaking.</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "dentsui14/CS3308_Final_Project",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="computing.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Computing Module</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="variables.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Variables</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#linear-vs-binary-search-algorithm">Linear vs Binary Search Algorithm</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pseudocode">Pseudocode</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mutliple-choice-quiz">Mutliple-Choice Quiz</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#activity">Activity</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Jupyter Book Community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
