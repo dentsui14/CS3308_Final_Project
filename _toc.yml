@@ -11,6 +11,7 @@ chapters:
   - file: conditionals
   - file: loops
   - file: midterm
+  - file: lists
   - file: final_computing
 - file: ai
   sections:
